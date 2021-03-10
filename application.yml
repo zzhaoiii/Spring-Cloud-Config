@@ -1,7 +1,3 @@
-spring:
-  application:
-    name: Config-Sverver-git
-
 test:
   a: 1
   b: 2
