@@ -1,0 +1,25 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: Config-Sverver-git
+  profiles:
+    active: subversion
+  cloud:
+    config:
+      server:
+        git:
+          uri:
+          password:
+          username:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 30
+
+
