@@ -1,6 +1,6 @@
 spring:
   application:
-    name: 333
+    name: 333444
 
 test:
   a: 1
